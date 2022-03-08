@@ -1,0 +1,271 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  &::before {
+    height: 90%;
+    width: 30%;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(to top, #993cff, #c841ff);
+    border-radius: 0 0 500px 500px;
+    z-index: -1;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  width: 90%;
+  max-width: 1000px;
+  margin: 80px auto;
+}
+
+/* ============================================ */
+/*                    .PHONE                    */
+/* ============================================ */
+.phone-wrapper {
+  max-width: 350px;
+  min-width: 350px;
+  height: auto;
+
+  background: white;
+  border-radius: 30px;
+  padding: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.442);
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+/* -------------- // .PHONE-TITLE ------------- */
+.phone-title {
+  width: 100%;
+  background-image: linear-gradient(to right, #993cff, #c841ff);
+  border-radius: 20px 20px 5px 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 2rem 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+
+    width: 60%;
+    height: 35px;
+    border-radius: 20px;
+
+    background: white;
+  }
+
+  // .dot
+  .dot {
+    color: white;
+    cursor: pointer;
+  }
+
+  // .arrow
+  .arrow {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+// .user
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-right: auto;
+
+  //   1
+  .user-avatar {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 200rem;
+    overflow: hidden;
+    border: 2px solid white;
+  }
+
+  // 2
+  .user-name {
+    h2 {
+      color: white;
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+
+    h4 {
+      color: rgba(255, 255, 255, 0.497);
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+/* ------------------- .CHAT ------------------ */
+.phone-chat {
+  width: 100%;
+  padding: 0 0.5rem;
+
+  background: #e6e1e1;
+}
+// .chat-block
+.chat-block {
+  border-radius: 20px;
+  background: #f0eeee;
+
+  width: fit-content;
+  width: 70%;
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.6rem;
+
+  color: #993cff;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+// .userbox
+.userbox {
+  margin-left: auto;
+  background: white;
+  color: black;
+
+  img {
+    width: 30%;
+    display: inline-block;
+    border-radius: 10px;
+  }
+}
+
+// .walk
+.walk {
+  width: 80%;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #993cff, #c841ff);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 200rem;
+    display: inline-block;
+    background: white;
+    padding: 0.5rem;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      background-image: linear-gradient(to right, #993cff, #c841ff);
+
+      border-radius: inherit;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  strong {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================================ */
+/*                     .TEXT                    */
+/* ============================================ */
+.phone-text {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  position: relative;
+  background: #e6e1e1;
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 20px;
+  }
+
+  .arrow-tex {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    background: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: calc(0% + 1rem);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* ============================================ */
+/*                     PARA                     */
+/* ============================================ */
+.para {
+  width: 50%;
+  text-align: left;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #231336;
+  }
+  p {
+    color: #afafb0;
+  }
+}

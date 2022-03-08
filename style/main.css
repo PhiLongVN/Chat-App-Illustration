@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Spartan:wght@500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+body::before {
+  height: 90%;
+  width: 30%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#993cff), to(#c841ff));
+  background-image: linear-gradient(to top, #993cff, #c841ff);
+  border-radius: 0 0 500px 500px;
+  z-index: -1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 80px auto;
+}
+
+/* ============================================ */
+/*                    .PHONE                    */
+/* ============================================ */
+.phone-wrapper {
+  max-width: 350px;
+  min-width: 350px;
+  height: auto;
+  background: white;
+  border-radius: 30px;
+  padding: 0.8rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.442);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.442);
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+/* -------------- // .PHONE-TITLE ------------- */
+.phone-title {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#993cff), to(#c841ff));
+  background-image: linear-gradient(to right, #993cff, #c841ff);
+  border-radius: 20px 20px 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.phone-title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  height: 35px;
+  border-radius: 20px;
+  background: white;
+}
+
+.phone-title .dot {
+  color: white;
+  cursor: pointer;
+}
+
+.phone-title .arrow {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  margin-right: auto;
+}
+
+.user .user-avatar {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 200rem;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.user .user-name h2 {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.user .user-name h4 {
+  color: rgba(255, 255, 255, 0.497);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* ------------------- .CHAT ------------------ */
+.phone-chat {
+  width: 100%;
+  padding: 0 0.5rem;
+  background: #e6e1e1;
+}
+
+.chat-block {
+  border-radius: 20px;
+  background: #f0eeee;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 70%;
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.6rem;
+  color: #993cff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.userbox {
+  margin-left: auto;
+  background: white;
+  color: black;
+}
+
+.userbox img {
+  width: 30%;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.walk {
+  width: 80%;
+  padding: 1rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#993cff), to(#c841ff));
+  background-image: linear-gradient(to right, #993cff, #c841ff);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.walk .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 200rem;
+  display: inline-block;
+  background: white;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.walk .circle::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#993cff), to(#c841ff));
+  background-image: linear-gradient(to right, #993cff, #c841ff);
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.walk strong {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* ============================================ */
+/*                     .TEXT                    */
+/* ============================================ */
+.phone-text {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  position: relative;
+  background: #e6e1e1;
+}
+
+.phone-text input {
+  width: 100%;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 20px;
+}
+
+.phone-text .arrow-tex {
+  width: 30px;
+  height: 30px;
+  border-radius: 100rem;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: calc(0% + 1rem);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.phone-text .arrow-tex:hover {
+  opacity: 0.8;
+}
+
+/* ============================================ */
+/*                     PARA                     */
+/* ============================================ */
+.para {
+  width: 50%;
+  text-align: left;
+}
+
+.para h1 {
+  font-size: 2.5rem;
+  color: #231336;
+}
+
+.para p {
+  color: #afafb0;
+}
+
+@media screen and (max-width: 767.98px) {
+  body::before {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#993cff), to(#c841ff));
+    background-image: linear-gradient(to top, #993cff, #c841ff);
+    border-radius: 0 0 500px;
+    z-index: -1;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-wrapper {
+    min-width: unset;
+  }
+  .para {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 319.98px) {
+  .para {
+    width: 80%;
+  }
+  .para h1 {
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

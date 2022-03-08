@@ -1,0 +1,32 @@
+@media screen and (max-width: 767.98px) {
+  body {
+    &::before {
+      background-image: linear-gradient(to top, #993cff, #c841ff);
+      border-radius: 0 0 500px;
+      z-index: -1;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .phone-wrapper {
+    min-width: unset;
+  }
+  .para {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 319.98px) {
+  .para {
+    width: 80%;
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
